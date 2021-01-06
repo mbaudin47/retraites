@@ -13,6 +13,7 @@
 \usepackage{fullpage}
 \usepackage{graphicx}
 \usepackage{url}
+\pdfsuppresswarningpagegroup=1
 
 %Il faut qu’on écrive une page ou deux par contre, pour expliquer le projet. En gros un titre,   
 \title{Ce que l'étude d'impact ne dit pas}
@@ -26,8 +27,7 @@
 
 \tableofcontents
 
-\section{Résumé}
-
+\begin{abstract}
 Le 24 Janvier 2020, le gouvernement a rendu public une 
 étude d'impact ayant pour objectif de présenter le projet 
 de loi instituant le système universel de retraites. 
@@ -40,6 +40,7 @@ penser l'étude d'impact.
 Ainsi, l'étude d'impact ne présente pas de résultat techniquement faux : 
 elle se contente de dissimuler l'effet de la réforme \emph{par omission}, 
 laissant penser ce qu'elle ne dit, en fait, pas. 
+\end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -71,7 +72,7 @@ l'étude.
 En soi, le fait que l'étude macro-économique d'un système représentant environ 14\% 
 du Produit Intérieur Brut (PIB) de la France n'ait donné lieu qu'à 7 pages laisse pour le 
 moins sur sa faim. 
-En fait, comme nous allons le voir, ce ne sera que la première d'une longue 
+En fait, comme nous allons le voir, ce ne sera que le premier d'une longue 
 série d'étonnements. 
 
 Sous l'effet de différentes réformes passées, l'équilibre financier du système 
@@ -168,8 +169,8 @@ Un changement des leviers par l'utilisateur implique des changements
 dans les résultats. 
 La notation consiste à ajouter l'indice "s" lorsque les entrées ou sorties 
 sont modifiées par l'utilisateur. 
-Lorsque les leviers $T$, $P$ et $A$ du COR sont modifiés par l'utilisateur, les nouvelles valeurs sont notées $T_s$, $P_s$ et $A_s$. 
-Lorsque le résultats $S$ du COR sont modifiés par l'utilisateur, 
+Lorsque les leviers (ou entrées) $T$, $P$ et $A$ du COR sont modifiés par l'utilisateur, les nouvelles valeurs sont notées $T_s$, $P_s$ et $A_s$. 
+Lorsque le résultat (ou sortie) $S$ du COR est modifié par l'utilisateur, 
 la nouvelle valeur est notée $S_s$.
 
 En sortie, le simulateur du COR calcule :
@@ -317,7 +318,7 @@ Dans ce paragraphe, nous détaillons la différence entre
 l'ensemble de la population à une date donnée et la génération d'une année 
 de naissance donnée. 
 
-En effet, lorsqu'on cherche à reproduire les simulation de l'étude d'impact, nous 
+En effet, lorsqu'on cherche à reproduire les simulations de l'étude d'impact, nous 
 avons besoin de données relatives à l'année de départ en retraite. 
 Une difficulté importante vient du fait que les graphiques de l'étude 
 d'impact sont réalisés, au contraire, par génération. 
@@ -426,7 +427,7 @@ Les résultats que nous obtenons sont présentés dans la figure \ref{fig-solde-
 \end{figure}
 
 Insistons sur le fait que le système doit être à 
-l'équilibre financier \emph{quelque soit la 
+l'équilibre financier \emph{quelle que soit la 
 conjoncture économique}. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -690,8 +691,8 @@ dépend fortement du taux de chômage.
 
 La figure \ref{fig-simulation-P-vs-COR} compare le niveau des pensions par rapport 
 aux salaires avant et après réforme. 
-On constate que le niveau des pensions avant et après réforme est 
-relativement proche. 
+On constate que les niveaux de pensions avant et après réforme sont 
+relativement proches. 
 Toutefois, une différence importante entre le système actuel 
 et le SUR est que cette trajectoire de pensions est une certitude dans le SUR, 
 alors que c'est une possibilité dans le système actuel. 
@@ -847,7 +848,7 @@ Il reste que cet âge de départ semble hypothétique, au vu de l'âge de dépar
 Nous avons vu comment la logique du projet de loi est une 
 rupture dans le pilotage du système de retraites, 
 imposant l'équilibre financier et le volume des dépenses 
-à priori : en fonction de l'âge de départ à la retraite, 
+\emph{a priori} : en fonction de l'âge de départ à la retraite, 
 les pensions devront donc s'ajuster \emph{en conséquence}. 
 De plus, nous avons observé ce qui nous était caché dans l'étude 
 d'impact, c'est à dire ce qui se passe entre 2050 et 2070 ainsi que 
